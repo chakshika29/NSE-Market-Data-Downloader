@@ -1,0 +1,30 @@
+{
+  "high": 57,
+  "timestamp": "02-Nov-2026 16:00:00",
+  "data": [
+    {
+      "symbol": "21STCENMGM",
+      "comapnyName": "21st Century Management Services Limited",
+      "series": "EQ",
+      "ltp": 60.71,
+      "change": 2.89,
+      "pChange": 5.0,
+      "new52WHL": 60.71,
+      "prev52WHL": 57.82,
+      "prevHLDate": "30-Oct-2026",
+      "prevClose": "57.82"
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "comapnyName": "Bharti Airtel Limited",
+      "series": "EQ",
+      "ltp": 1725.0,
+      "change": 45.0,
+      "pChange": 2.68,
+      "new52WHL": 1725.0,
+      "prev52WHL": 1690.0,
+      "prevHLDate": "28-Oct-2026",
+      "prevClose": "1680.0"
+    }
+  ]
+}

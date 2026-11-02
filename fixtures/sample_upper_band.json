@@ -1,0 +1,47 @@
+{
+  "count": {
+    "TOTAL": 116,
+    "UPPER": 116,
+    "LOWER": 0,
+    "BOTH": 0
+  },
+  "upper": {
+    "AllSec": {
+      "timestamp": "02-Nov-2026 16:00:00",
+      "data": [
+        {
+          "symbol": "ITI",
+          "series": "EQ",
+          "priceBand": "20",
+          "ltp": "259.14",
+          "change": "43.19",
+          "pChange": "20.00",
+          "highPrice": 259.14,
+          "lowPrice": 214.39,
+          "totalTradedVol": "171.99 L",
+          "totalTradedVolcsv": 17199121,
+          "turnover": "431.65 Cr",
+          "turnovercsv": 4316463397.37,
+          "yearHigh": 335.0,
+          "yearLow": 210.76
+        },
+        {
+          "symbol": "SUZLON",
+          "series": "EQ",
+          "priceBand": "5",
+          "ltp": "72.45",
+          "change": "3.45",
+          "pChange": "5.00",
+          "highPrice": 72.45,
+          "lowPrice": 69.10,
+          "totalTradedVol": "450.20 L",
+          "totalTradedVolcsv": 45020000,
+          "turnover": "326.15 Cr",
+          "turnovercsv": 3261500000.0,
+          "yearHigh": 86.04,
+          "yearLow": 37.10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "legends": ["NIFTY", "BANKNIFTY", "NIFTYNEXT50", "SecGtr20", "SecLwr20", "FOSec", "allSec"],
+  "allSec": {
+    "timestamp": "02-Nov-2026 16:00:00",
+    "data": [
+      {
+        "symbol": "RELIANCE",
+        "series": "EQ",
+        "open_price": 1280.0,
+        "high_price": 1315.5,
+        "low_price": 1275.0,
+        "ltp": 1310.25,
+        "prev_price": 1270.0,
+        "net_price": 40.25,
+        "perChange": 3.17,
+        "trade_quantity": "125.40 L",
+        "turnover": "1642.80 Cr"
+      },
+      {
+        "symbol": "TCS",
+        "series": "EQ",
+        "open_price": 4120.0,
+        "high_price": 4210.0,
+        "low_price": 4105.0,
+        "ltp": 4195.5,
+        "prev_price": 4100.0,
+        "net_price": 95.5,
+        "perChange": 2.33,
+        "trade_quantity": "28.30 L",
+        "turnover": "1187.30 Cr"
+      },
+      {
+        "symbol": "INFY",
+        "series": "EQ",
+        "open_price": 1820.0,
+        "high_price": 1855.0,
+        "low_price": 1815.0,
+        "ltp": 1848.0,
+        "prev_price": 1810.0,
+        "net_price": 38.0,
+        "perChange": 2.1,
+        "trade_quantity": "52.10 L",
+        "turnover": "962.80 Cr"
+      }
+    ]
+  }
+}

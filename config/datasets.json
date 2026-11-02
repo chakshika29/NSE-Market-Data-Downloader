@@ -1,0 +1,127 @@
+{
+  "datasets": {
+    "top-gainers-losers": {
+      "id": "top-gainers-losers",
+      "name": "Top Gainers / Losers",
+      "page_url": "https://www.nseindia.com/market-data/top-gainers-losers",
+      "csv_filename_prefix": "top_gainers_losers",
+      "description": "NSE equity market top gaining and losing securities across all sectors",
+      "endpoints": {
+        "gainers": "https://www.nseindia.com/api/live-analysis-variations?index=gainers",
+        "loosers": "https://www.nseindia.com/api/live-analysis-variations?index=loosers"
+      },
+      "section": "allSec",
+      "fallback_sections": ["NIFTY", "FOSec"],
+      "timestamp_path": ["allSec", "timestamp"],
+      "required_fields": ["symbol", "ltp", "category"],
+      "dedup_keys": ["symbol", "series", "category"],
+      "numeric_fields": ["open_price", "high_price", "low_price", "ltp", "prev_price", "perChange"],
+      "column_order": [
+        "symbol",
+        "series",
+        "category",
+        "open_price",
+        "high_price",
+        "low_price",
+        "ltp",
+        "prev_price",
+        "net_price",
+        "perChange",
+        "trade_quantity",
+        "turnover"
+      ]
+    },
+    "upper-band-hitters": {
+      "id": "upper-band-hitters",
+      "name": "Upper Band Hitters",
+      "page_url": "https://www.nseindia.com/market-data/upper-band-hitters",
+      "csv_filename_prefix": "upper_band_hitters",
+      "description": "Securities that have touched or breached their daily upper circuit price band",
+      "endpoints": {
+        "primary": "https://www.nseindia.com/api/live-analysis-price-band-hitter"
+      },
+      "data_path": ["upper", "AllSec", "data"],
+      "timestamp_path": ["upper", "AllSec", "timestamp"],
+      "required_fields": ["symbol", "ltp", "priceBand"],
+      "dedup_keys": ["symbol", "series"],
+      "numeric_fields": ["ltp", "change", "pChange", "highPrice", "lowPrice"],
+      "column_order": [
+        "symbol",
+        "series",
+        "priceBand",
+        "ltp",
+        "change",
+        "pChange",
+        "highPrice",
+        "lowPrice",
+        "totalTradedVol",
+        "totalTradedVolcsv",
+        "turnover",
+        "turnovercsv",
+        "yearHigh",
+        "yearLow"
+      ]
+    },
+    "volume-gainers-spurts": {
+      "id": "volume-gainers-spurts",
+      "name": "Volume Gainers / Spurts",
+      "page_url": "https://www.nseindia.com/market-data/volume-gainers-spurts",
+      "csv_filename_prefix": "volume_gainers_spurts",
+      "description": "Equities experiencing unusual volume expansion relative to multi-week averages",
+      "endpoints": {
+        "primary": "https://www.nseindia.com/api/live-analysis-volume-gainers"
+      },
+      "data_path": ["data"],
+      "timestamp_path": ["timestamp"],
+      "required_fields": ["symbol", "volume", "week1AvgVolume"],
+      "dedup_keys": ["symbol"],
+      "numeric_fields": ["ltp", "pChange", "week1AvgVolume", "week1volChange", "week2AvgVolume", "week2volChange"],
+      "column_order": [
+        "symbol",
+        "companyName",
+        "ltp",
+        "pChange",
+        "volume",
+        "week1AvgVolume",
+        "week1volChange",
+        "week2AvgVolume",
+        "week2volChange",
+        "turnover"
+      ]
+    },
+    "52-week-high": {
+      "id": "52-week-high",
+      "name": "52-Week High — Equity Market",
+      "page_url": "https://www.nseindia.com/market-data/52-week-high-equity-market",
+      "csv_filename_prefix": "52_week_high",
+      "description": "Equities reaching new 52-week price peaks during the trading session",
+      "endpoints": {
+        "primary": "https://www.nseindia.com/api/live-analysis-data-52weekhighstock"
+      },
+      "data_path": ["data"],
+      "timestamp_path": ["timestamp"],
+      "required_fields": ["symbol", "ltp", "new52WHL"],
+      "dedup_keys": ["symbol", "series"],
+      "numeric_fields": ["ltp", "change", "pChange", "new52WHL", "prev52WHL"],
+      "column_order": [
+        "symbol",
+        "comapnyName",
+        "series",
+        "ltp",
+        "change",
+        "pChange",
+        "new52WHL",
+        "prev52WHL",
+        "prevHLDate",
+        "prevClose"
+      ]
+    }
+  },
+  "network": {
+    "timeout_seconds": 15,
+    "max_retries": 4,
+    "backoff_factor": 2.0,
+    "status_forcelist": [500, 502, 503, 504],
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+  }
+}

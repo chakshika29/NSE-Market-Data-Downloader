@@ -1,0 +1,6 @@
+# Core Dependencies for NSE Market Data Downloader
+# Python 3.11+ compatible
+
+requests>=2.31.0,<3.0.0
+pandas>=2.1.0,<4.0.0
+pytest>=8.0.0,<10.0.0

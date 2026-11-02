@@ -1,0 +1,29 @@
+{
+  "timestamp": "02-Nov-2026 16:00:00",
+  "data": [
+    {
+      "symbol": "CLCIND",
+      "companyName": "CLC Industries Limited",
+      "ltp": 42.0,
+      "pChange": 0.0,
+      "volume": "50.00 K",
+      "week1AvgVolume": 115.0,
+      "week1volChange": 434.81,
+      "week2AvgVolume": 157.0,
+      "week2volChange": 317.48,
+      "turnover": "21.00 L"
+    },
+    {
+      "symbol": "TATAMOTORS",
+      "companyName": "Tata Motors Limited",
+      "ltp": 890.5,
+      "pChange": 4.25,
+      "volume": "280.50 L",
+      "week1AvgVolume": 95.2,
+      "week1volChange": 194.64,
+      "week2AvgVolume": 110.0,
+      "week2volChange": 155.0,
+      "turnover": "2497.85 Cr"
+    }
+  ]
+}
